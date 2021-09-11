@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'VideoDecoder_Example' do
+  pod 'VideoDecoder', :path => '../'
+
+  target 'VideoDecoder_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
