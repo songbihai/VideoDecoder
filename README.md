@@ -60,8 +60,8 @@ BTC:
 ETH:
 0x83f931a297C3A05Fd0eF3891670f85316EB12A4C
 
-![Ali pay](https://i.loli.net/2021/09/15/8LBUwhdRvcQNxMa.jpg)
-![WeChat pay](https://i.loli.net/2021/09/15/GAazm5lS7HN1fYZ.jpg)
+
+![Ali pay](https://i.loli.net/2021/09/15/z5LuainUDeIRTpZ.jpg)  ![WeChat pay](https://i.loli.net/2021/09/15/e8GXMf1CIxR9KVo.jpg)
 
 ## License
 
