@@ -2,11 +2,6 @@
 
 iOS platform video hard decoding, support h264, h265
 
-[![CI Status](https://img.shields.io/travis/songbihai/VideoDecoder.svg?style=flat)](https://travis-ci.org/songbihai/VideoDecoder)
-[![Version](https://img.shields.io/cocoapods/v/VideoDecoder.svg?style=flat)](https://cocoapods.org/pods/VideoDecoder)
-[![License](https://img.shields.io/cocoapods/l/VideoDecoder.svg?style=flat)](https://cocoapods.org/pods/VideoDecoder)
-[![Platform](https://img.shields.io/cocoapods/p/VideoDecoder.svg?style=flat)](https://cocoapods.org/pods/VideoDecoder)
-
 ### Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
