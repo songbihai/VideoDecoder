@@ -147,7 +147,7 @@ open class H265Decoder: VideoDecoder {
         }
     }
     
-    open func decodeVideoUnit(_ unit: H265NalUnit) {
+    open func decodeVideoUnit(_ unit: NalUnitProtocol) {
                 
         var blockBuffer: CMBlockBuffer?
         let buffer = UnsafeMutableRawPointer(mutating: unit.lengthHeadBuffer)

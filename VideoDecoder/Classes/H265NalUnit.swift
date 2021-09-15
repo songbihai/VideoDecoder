@@ -40,4 +40,9 @@ open class H265NalUnit: NalUnitProtocol {
         self.type = type
     }
     
+    deinit {
+        buffer.deallocate()
+        lengthHeadBuffer?.deallocate()
+    }
+    
 }

@@ -45,4 +45,9 @@ open class H264NalUnit: NalUnitProtocol {
         self.type = type
     }
     
+    deinit {
+        buffer.deallocate()
+        lengthHeadBuffer?.deallocate()
+    }
+    
 }
