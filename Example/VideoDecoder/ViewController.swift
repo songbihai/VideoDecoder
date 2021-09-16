@@ -52,9 +52,9 @@ class ViewController: UIViewController {
         if let videoPacket = videoFileReader.nextVideoPacket()  {
             decoder.decodeOnePacket(videoPacket)
         }else {
-            if startButton.isSelected {
-                DispatchQueue.main.async { [weak self] in
-                    if let self = self {
+            DispatchQueue.main.async { [weak self] in
+                if let self = self {
+                    if self.startButton.isSelected {
                         self.startAction(self.startButton)
                     }
                 }

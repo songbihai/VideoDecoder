@@ -112,7 +112,6 @@ open class H264Decoder: VideoDecoder {
         let nalUnits = NalUnitParser.unitParser(packet: packet)
         var currntUnit: H264NalUnit?
         nalUnits.forEach { nalUnit in
-            print("================\(nalUnit.type)")
             if let unit = nalUnit as? H264NalUnit {
                 switch unit.type {
                 case .sps:
@@ -141,7 +140,7 @@ open class H264Decoder: VideoDecoder {
         }
     }
     
-    open func decodeVideoUnit(_ unit: H264NalUnit) {
+    open func decodeVideoUnit(_ unit: NalUnitProtocol) {
                         
         var blockBuffer: CMBlockBuffer?
         let buffer = UnsafeMutableRawPointer(mutating: unit.lengthHeadBuffer)

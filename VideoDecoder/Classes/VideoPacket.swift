@@ -40,13 +40,17 @@ open class VideoPacket {
     
     public init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize) {
         
-        
         self.buffer = buffer
         self.bufferSize = bufferSize
         self.fps = fps;
         self.isIFrame = isIFrame
         self.type = type
         self.videoSize = videoSize
+        
+    }
+    
+    deinit {
+        buffer.deallocate()
     }
   
 }

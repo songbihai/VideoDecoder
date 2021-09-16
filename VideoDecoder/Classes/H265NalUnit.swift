@@ -9,9 +9,9 @@ open class H265NalUnit: NalUnitProtocol {
     open private(set) var type: NalUnitType
     
     public init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int) {
-        self.buffer = buffer
+        self.buffer = buffer.copy(capacity: bufferSize)
         self.bufferSize = bufferSize
-        outHeadBuffer = buffer + 4
+        outHeadBuffer = self.buffer + 4
         var length = CFSwapInt32HostToBig(UInt32(bufferSize - 4))
         let rawPointer = UnsafeMutableRawPointer.allocate(byteCount: bufferSize, alignment: MemoryLayout<UInt8>.alignment)
         rawPointer.initializeMemory(as: UInt8.self, from: buffer, count: bufferSize)
@@ -38,6 +38,11 @@ open class H265NalUnit: NalUnitProtocol {
             break
         }
         self.type = type
+    }
+    
+    deinit {
+        buffer.deallocate()
+        lengthHeadBuffer?.deallocate()
     }
     
 }
