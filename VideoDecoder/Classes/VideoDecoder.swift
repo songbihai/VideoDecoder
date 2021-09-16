@@ -80,7 +80,7 @@ public protocol VideoDecoder: AnyObject {
     
     func decodeOnePacket(_ packet: VideoPacket)
     
-    func decodeVideoUnit(_ unit: NalUnitProtocol)
+    func decodeVideoUnit(_ unit: NalUnitProtocol) 
     
 }
 

@@ -48,10 +48,11 @@ class ViewController: UIViewController {
     }
     
     func takeVideoPackets() {
-        
+        //This is not the case in actual projects
         if let videoPacket = videoFileReader.nextVideoPacket()  {
             decoder.decodeOnePacket(videoPacket)
-        }else {
+        }else {//end
+            videoFileReader = .init(type)
             DispatchQueue.main.async { [weak self] in
                 if let self = self {
                     if self.startButton.isSelected {
