@@ -34,7 +34,6 @@ open class H265Decoder: VideoDecoder {
     private var invalidateSession: Bool = false
     private var buffers: [CMSampleBuffer] = []
     private var minimumGroupOfPictures: Int = H265Decoder.defaultMinimumGroupOfPictures
-    private var formatDescription: CMFormatDescription?
     private var formatDesc: CMVideoFormatDescription?
     private var callback: VTDecompressionOutputCallback = {(decompressionOutputRefCon: UnsafeMutableRawPointer?, _: UnsafeMutableRawPointer?, status: OSStatus, infoFlags: VTDecodeInfoFlags, imageBuffer: CVBuffer?, presentationTimeStamp: CMTime, duration: CMTime) in
         let decoder: H265Decoder = Unmanaged<H265Decoder>.fromOpaque(decompressionOutputRefCon!).takeUnretainedValue()

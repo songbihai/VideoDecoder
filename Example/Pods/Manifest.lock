@@ -1,5 +1,5 @@
 PODS:
-  - VideoDecoder (1.0.0)
+  - VideoDecoder (1.0.2)
 
 DEPENDENCIES:
   - VideoDecoder (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VideoDecoder: 5625bc8d6b0abac67e742979e7b09365b9d59dc8
+  VideoDecoder: 7f781dc5d8611d2541b111d428684b2bff3b504f
 
 PODFILE CHECKSUM: 72de4fe6f92c0241542511c3489394031dd75d5e
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.10.1

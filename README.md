@@ -38,11 +38,14 @@ iOS
 
 ## Installation
 
-VideoDecoder is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
 
-```ruby
-pod 'VideoDecoder'
+```pod 'VideoDecoder'
+```
+
+### Carthage
+
+```github "songbihai/VideoDecoder"
 ```
 
 ### Reward
