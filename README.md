@@ -40,12 +40,14 @@ iOS
 
 ### CocoaPods
 
-```pod 'VideoDecoder'
+```ruby
+pod 'VideoDecoder'
 ```
 
 ### Carthage
 
-```github "songbihai/VideoDecoder"
+```ruby
+github "songbihai/VideoDecoder"
 ```
 
 ### Reward
