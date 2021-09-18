@@ -7,7 +7,7 @@ iOS platform video hard decoding, support h264, h265
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 h264:
-```
+```swift
 //Initialize the decoder instance and assign it a delegate to receive the decoded data  
 //callbacks
 let decoder = H264Decoder(delegate: self)
@@ -18,7 +18,7 @@ decoder.decodeOnePacket(videoPacket)
 ```
 
 h265:
-```
+```swift
 //Initialize the decoder instance and assign it a delegate to receive the decoded data  
 //callbacks
 let decoder = H265Decoder(delegate: self)
