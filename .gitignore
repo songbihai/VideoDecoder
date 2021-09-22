@@ -11,13 +11,17 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
+xcuserdata
 *.xccheckout
-profile
 *.moved-aside
 DerivedData
+*.xcuserstate
 *.hmap
 *.ipa
+.swiftpm
+
+# AppCode
+.idea
 
 # Bundler
 .bundle
