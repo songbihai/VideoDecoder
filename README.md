@@ -34,7 +34,7 @@ decoder.decodeOnePacket(videoPacket)
 iOS
 
   >11.0+
-  >Swift5.x
+  >Swift5.0+
 
 ## Installation
 

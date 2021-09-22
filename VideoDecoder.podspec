@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VideoDecoder'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of VideoDecoder.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   
   s.swift_version = '5.0'
 
-  s.source_files = 'VideoDecoder/Classes/**/*'
+  s.source_files = 'Sources/**/*.{swift}'
   
   # s.resource_bundles = {
   #   'VideoDecoder' => ['VideoDecoder/Assets/*.png']
