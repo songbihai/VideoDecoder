@@ -1,4 +1,5 @@
 import CoreMedia
+import UIKit
 
 public extension CMSampleBuffer {
     
