@@ -1,0 +1,16 @@
+PODS:
+  - VideoDecoder (1.0.3)
+
+DEPENDENCIES:
+  - VideoDecoder (from `../`)
+
+EXTERNAL SOURCES:
+  VideoDecoder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VideoDecoder: db2d81b6f469b1fa285271640c4e040823f508c9
+
+PODFILE CHECKSUM: 64f8d6a568460b0a90e378b28d7db490db47bb50
+
+COCOAPODS: 1.10.1

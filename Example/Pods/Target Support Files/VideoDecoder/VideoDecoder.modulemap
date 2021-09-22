@@ -1,0 +1,6 @@
+framework module VideoDecoder {
+  umbrella header "VideoDecoder-umbrella.h"
+
+  export *
+  module * { export * }
+}

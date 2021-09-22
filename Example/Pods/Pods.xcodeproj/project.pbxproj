@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D99F9627B6DEA530AF3BDA9B14A986 /* NalUnitParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9FFD12174E3EDD21A9A69594B66A29 /* NalUnitParser.swift */; };
+		09DB5285CD5318CDF006D1865B9DAC77 /* H265Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D949924D594A1C56CE6BB46027A66DE /* H265Decoder.swift */; };
+		0AB36DF12D6DECCBA3D1D131AA36DC13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		13E209223F075D599BAEB6F83AE2E1A9 /* Pods-VideoDecoder-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C045DC6656CA1ACA9EAEA18FD2A679C /* Pods-VideoDecoder-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		170E060308EF5D64CB98281E3D02FFDD /* H264Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA47DEDAB3985789262B079284B1343 /* H264Decoder.swift */; };
+		1DD83C216020730A36BFE18E02E6EA75 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C3BB1AB014C1EBD8AD23D8C774C543 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26727E1AECAF9ECA742E4B447F264285 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C5E88B6FF31169C345CA8A6BC93970 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-dummy.m */; };
+		3C95BFE09ABA897FFFA6B338C34FCE6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4153DEF8D32502A505AEFEE68CCFD1B2 /* H264NalUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF800A9AC5EEDDA2DB3D246DB11434 /* H264NalUnit.swift */; };
+		80B0933297CAA614EDC2C4DE514D16C9 /* Pods-VideoDecoder-ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F7DEBFAA13EA544A44F518E89388BE /* Pods-VideoDecoder-ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B15068C70470FEA5422B158D35A8D2 /* Pods-VideoDecoder-ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A056880E5CF95BCFED00B6B3E0834B9 /* Pods-VideoDecoder-ExampleTests-dummy.m */; };
+		8B1C19D2145D3E2F1AC1A30424DCEE66 /* VideoDecoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41816F3B05DDA9BB6B5329D5B9EC074A /* VideoDecoder-dummy.m */; };
+		8C37D4C8535E251A86CC8FE21B836CE1 /* H265NalUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8667A3E27BCBAE493F3314BA7638C7 /* H265NalUnit.swift */; };
+		A5E0F36E769F91F68FED97497508AF7A /* VideoDecoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D804ED6B63AC6DDFFB0221CF82A7FEC /* VideoDecoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7A6B75D8B84DB68AEFF6C7BAD5A434F /* VideoDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C12696F3C2E2BEB8030CE5590A452 /* VideoDecoder.swift */; };
+		BA46FB5D4B079B4982BF43C6766E489A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BAF0365B86E55839188433D50B56C1B7 /* CMSampleBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7933F025A910917FBC8BDD9A5CD71C41 /* CMSampleBuffer+Extension.swift */; };
+		CB4EB65935F1C1D9FC970E3367829FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EA5A17BE0EA9FDF37ED466850B40FBB0 /* NalUnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CD5AE2C25E327669C7EE3F11599FB /* NalUnitProtocol.swift */; };
+		F4054E13AF11DD14B76E8FDD7930011C /* UnsafePointer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399DEBCFC92E03F42DD29EE7B9FFE70 /* UnsafePointer+Extension.swift */; };
+		FC2D6C991CE589499CD101B924CA7A7B /* VideoPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F532CDEA1EB43834DCC0DA8F525392 /* VideoPacket.swift */; };
+		FF4423604B205C6C1632050382C42845 /* Pods-VideoDecoder-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95F5EF57CDDC3CC98BC4BC44038468 /* Pods-VideoDecoder-Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B22A7BDC1BF68FFAA7F3A8D3F928F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D797287CC1836BF6B80CEA63BFDBFA6;
+			remoteInfo = "Pods-VideoDecoder-Example";
+		};
+		3AC9BB5FC19CA284E7BB739951492ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC35F34D7E2B94B1D2F4EC6F1716D88C;
+			remoteInfo = VideoDecoder;
+		};
+		9560962C869959B10315FB1D7E311891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC35F34D7E2B94B1D2F4EC6F1716D88C;
+			remoteInfo = VideoDecoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CDBA464D2F0912576D96D51F9F53382 /* VideoDecoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VideoDecoder.framework; path = VideoDecoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F532CDEA1EB43834DCC0DA8F525392 /* VideoPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPacket.swift; path = Sources/VideoPacket.swift; sourceTree = "<group>"; };
+		1A056880E5CF95BCFED00B6B3E0834B9 /* Pods-VideoDecoder-ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoDecoder-ExampleTests-dummy.m"; sourceTree = "<group>"; };
+		1C045DC6656CA1ACA9EAEA18FD2A679C /* Pods-VideoDecoder-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoDecoder-Example-umbrella.h"; sourceTree = "<group>"; };
+		1D804ED6B63AC6DDFFB0221CF82A7FEC /* VideoDecoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoDecoder-umbrella.h"; sourceTree = "<group>"; };
+		27164CFF94C1179AEA9817B44A2C916D /* VideoDecoder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VideoDecoder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30AB2D03F802E4AB7FF33A52F03492D4 /* VideoDecoder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoDecoder.release.xcconfig; sourceTree = "<group>"; };
+		31EBDB9F7FA5D3667E2A395C490A5AF8 /* VideoDecoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VideoDecoder.modulemap; sourceTree = "<group>"; };
+		37484EE87EBF0772EEE6AB8F460DAC22 /* Pods-VideoDecoder-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoDecoder-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37C5E88B6FF31169C345CA8A6BC93970 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-dummy.m"; sourceTree = "<group>"; };
+		37FE199E31BF9FEB23B2017415207248 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.modulemap"; sourceTree = "<group>"; };
+		3852D4218902F2997D840250156F67F6 /* VideoDecoder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoDecoder.debug.xcconfig; sourceTree = "<group>"; };
+		38B7BB34104F01DF93CD896E9D8D252A /* Pods-VideoDecoder-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoDecoder-Example-Info.plist"; sourceTree = "<group>"; };
+		3C6E49D435E67D44A0B2050B61261EFE /* Pods-VideoDecoder-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoDecoder-Example-frameworks.sh"; sourceTree = "<group>"; };
+		41816F3B05DDA9BB6B5329D5B9EC074A /* VideoDecoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VideoDecoder-dummy.m"; sourceTree = "<group>"; };
+		41C9A082ABBC867B77F2A5DD9E56035C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4399DEBCFC92E03F42DD29EE7B9FFE70 /* UnsafePointer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UnsafePointer+Extension.swift"; path = "Sources/UnsafePointer+Extension.swift"; sourceTree = "<group>"; };
+		4D949924D594A1C56CE6BB46027A66DE /* H265Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = H265Decoder.swift; path = Sources/H265Decoder.swift; sourceTree = "<group>"; };
+		50BC90DD2F5EB929950638D90B4D9E07 /* VideoDecoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoDecoder-prefix.pch"; sourceTree = "<group>"; };
+		54109B52E5A22AFE4ABD92001B37C5C9 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoDecoder-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		547D1BC86D2F94462F28D908383EB1D3 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoDecoder-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61BF0506F7AF3E9B18768C716DB090F4 /* VideoDecoder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VideoDecoder-Info.plist"; sourceTree = "<group>"; };
+		63BBF78C611E9F2A2FEEA086700F5284 /* Pods-VideoDecoder-ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoDecoder-ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6410E030C3BE1EC22BA2A92EA105A5BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6518FADAADA8FEA7E523C20B411B25DD /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		66EA7CE8AAA011A1DBCBCC9690DB6FCE /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6977DD3AA8FB58DCA35EA2C72FBAA453 /* Pods-VideoDecoder-ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoDecoder-ExampleTests.modulemap"; sourceTree = "<group>"; };
+		6E9FFD12174E3EDD21A9A69594B66A29 /* NalUnitParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NalUnitParser.swift; path = Sources/NalUnitParser.swift; sourceTree = "<group>"; };
+		7038E1E17C7AA7B1D0351AF203987D38 /* Pods-VideoDecoder-ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoDecoder-ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78AA85EFCF25A1299D2FD71DDE1CE205 /* Pods-VideoDecoder-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoDecoder-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7933F025A910917FBC8BDD9A5CD71C41 /* CMSampleBuffer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CMSampleBuffer+Extension.swift"; path = "Sources/CMSampleBuffer+Extension.swift"; sourceTree = "<group>"; };
+		7A8667A3E27BCBAE493F3314BA7638C7 /* H265NalUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = H265NalUnit.swift; path = Sources/H265NalUnit.swift; sourceTree = "<group>"; };
+		800299620D00E98CF5D64A52238B7B1B /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92ACAA7C2DCCC8DAD9317CC5C43BD7B4 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9A3E9E82B7E98522B06DE542717CAF23 /* Pods-VideoDecoder-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoDecoder-Example.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2E0E65F9322F8C7A0CFB04EEF9FE200 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-Info.plist"; sourceTree = "<group>"; };
+		A6D9259DEBF7E925F5D7EBDC111FFA65 /* Pods-VideoDecoder-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoDecoder-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B22C12696F3C2E2BEB8030CE5590A452 /* VideoDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoDecoder.swift; path = Sources/VideoDecoder.swift; sourceTree = "<group>"; };
+		BEA47DEDAB3985789262B079284B1343 /* H264Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = H264Decoder.swift; path = Sources/H264Decoder.swift; sourceTree = "<group>"; };
+		C3E5CCCC57E5BF963C2465C55C8B88C4 /* Pods_VideoDecoder_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoDecoder_ExampleTests.framework; path = "Pods-VideoDecoder-ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F7DEBFAA13EA544A44F518E89388BE /* Pods-VideoDecoder-ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoDecoder-ExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		CB95F5EF57CDDC3CC98BC4BC44038468 /* Pods-VideoDecoder-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoDecoder-Example-dummy.m"; sourceTree = "<group>"; };
+		D2DCFF18E43D96870BFB133E19CBADD9 /* Pods_VideoDecoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoDecoder_Example.framework; path = "Pods-VideoDecoder-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4CD5AE2C25E327669C7EE3F11599FB /* NalUnitProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NalUnitProtocol.swift; path = Sources/NalUnitProtocol.swift; sourceTree = "<group>"; };
+		DDD20F9730C3DB383D58474F093A2F9E /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6A453EF4252C50C90EE9364D3FB4780 /* Pods-VideoDecoder-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoDecoder-Example.release.xcconfig"; sourceTree = "<group>"; };
+		EBF68320915090CB8FA82B7BB65ED223 /* Pods_VideoDecoder_Example_VideoDecoder_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoDecoder_Example_VideoDecoder_ExampleUITests.framework; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9CC71A904D35B8E5C4E1DF96689C5F /* Pods-VideoDecoder-ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoDecoder-ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		F7C3BB1AB014C1EBD8AD23D8C774C543 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		FABF800A9AC5EEDDA2DB3D246DB11434 /* H264NalUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = H264NalUnit.swift; path = Sources/H264NalUnit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23BAC481DD553D7AC08EA0C60CACE384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C95BFE09ABA897FFFA6B338C34FCE6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B7441A67C0841D070693DBF2672245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4EB65935F1C1D9FC970E3367829FC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D6B18A3755BFFEA4BE350C605A6F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB36DF12D6DECCBA3D1D131AA36DC13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47C2216C04C20B33BC9AD117BAB4D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA46FB5D4B079B4982BF43C6766E489A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F6102A2AA8E641715B170287A84FEB /* Pods-VideoDecoder-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6977DD3AA8FB58DCA35EA2C72FBAA453 /* Pods-VideoDecoder-ExampleTests.modulemap */,
+				63BBF78C611E9F2A2FEEA086700F5284 /* Pods-VideoDecoder-ExampleTests-acknowledgements.markdown */,
+				7038E1E17C7AA7B1D0351AF203987D38 /* Pods-VideoDecoder-ExampleTests-acknowledgements.plist */,
+				1A056880E5CF95BCFED00B6B3E0834B9 /* Pods-VideoDecoder-ExampleTests-dummy.m */,
+				EF9CC71A904D35B8E5C4E1DF96689C5F /* Pods-VideoDecoder-ExampleTests-Info.plist */,
+				C5F7DEBFAA13EA544A44F518E89388BE /* Pods-VideoDecoder-ExampleTests-umbrella.h */,
+				547D1BC86D2F94462F28D908383EB1D3 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */,
+				54109B52E5A22AFE4ABD92001B37C5C9 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */,
+			);
+			name = "Pods-VideoDecoder-ExampleTests";
+			path = "Target Support Files/Pods-VideoDecoder-ExampleTests";
+			sourceTree = "<group>";
+		};
+		2082ABCB0D5E57A590E72C76392265E3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6410E030C3BE1EC22BA2A92EA105A5BB /* LICENSE */,
+				41C9A082ABBC867B77F2A5DD9E56035C /* README.md */,
+				27164CFF94C1179AEA9817B44A2C916D /* VideoDecoder.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		32280BF7C97E40C4425104885CD32881 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31EBDB9F7FA5D3667E2A395C490A5AF8 /* VideoDecoder.modulemap */,
+				41816F3B05DDA9BB6B5329D5B9EC074A /* VideoDecoder-dummy.m */,
+				61BF0506F7AF3E9B18768C716DB090F4 /* VideoDecoder-Info.plist */,
+				50BC90DD2F5EB929950638D90B4D9E07 /* VideoDecoder-prefix.pch */,
+				1D804ED6B63AC6DDFFB0221CF82A7FEC /* VideoDecoder-umbrella.h */,
+				3852D4218902F2997D840250156F67F6 /* VideoDecoder.debug.xcconfig */,
+				30AB2D03F802E4AB7FF33A52F03492D4 /* VideoDecoder.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VideoDecoder";
+			sourceTree = "<group>";
+		};
+		4FBDFE39317D1DB2A50CE78050E86428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2DCFF18E43D96870BFB133E19CBADD9 /* Pods_VideoDecoder_Example.framework */,
+				EBF68320915090CB8FA82B7BB65ED223 /* Pods_VideoDecoder_Example_VideoDecoder_ExampleUITests.framework */,
+				C3E5CCCC57E5BF963C2465C55C8B88C4 /* Pods_VideoDecoder_ExampleTests.framework */,
+				0CDBA464D2F0912576D96D51F9F53382 /* VideoDecoder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		668E197E8C0B19E2181EE9603A6F627F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A171633C84C5F2759A6CD6118717C80A /* Pods-VideoDecoder-Example */,
+				BB57B52DD809DFD15DF276C116A51CC8 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests */,
+				07F6102A2AA8E641715B170287A84FEB /* Pods-VideoDecoder-ExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8187F10F06F2785C9C7D684183FBB280 /* VideoDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				7933F025A910917FBC8BDD9A5CD71C41 /* CMSampleBuffer+Extension.swift */,
+				BEA47DEDAB3985789262B079284B1343 /* H264Decoder.swift */,
+				FABF800A9AC5EEDDA2DB3D246DB11434 /* H264NalUnit.swift */,
+				4D949924D594A1C56CE6BB46027A66DE /* H265Decoder.swift */,
+				7A8667A3E27BCBAE493F3314BA7638C7 /* H265NalUnit.swift */,
+				6E9FFD12174E3EDD21A9A69594B66A29 /* NalUnitParser.swift */,
+				DB4CD5AE2C25E327669C7EE3F11599FB /* NalUnitProtocol.swift */,
+				4399DEBCFC92E03F42DD29EE7B9FFE70 /* UnsafePointer+Extension.swift */,
+				B22C12696F3C2E2BEB8030CE5590A452 /* VideoDecoder.swift */,
+				17F532CDEA1EB43834DCC0DA8F525392 /* VideoPacket.swift */,
+				2082ABCB0D5E57A590E72C76392265E3 /* Pod */,
+				32280BF7C97E40C4425104885CD32881 /* Support Files */,
+			);
+			name = VideoDecoder;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A171633C84C5F2759A6CD6118717C80A /* Pods-VideoDecoder-Example */ = {
+			isa = PBXGroup;
+			children = (
+				9A3E9E82B7E98522B06DE542717CAF23 /* Pods-VideoDecoder-Example.modulemap */,
+				37484EE87EBF0772EEE6AB8F460DAC22 /* Pods-VideoDecoder-Example-acknowledgements.markdown */,
+				A6D9259DEBF7E925F5D7EBDC111FFA65 /* Pods-VideoDecoder-Example-acknowledgements.plist */,
+				CB95F5EF57CDDC3CC98BC4BC44038468 /* Pods-VideoDecoder-Example-dummy.m */,
+				3C6E49D435E67D44A0B2050B61261EFE /* Pods-VideoDecoder-Example-frameworks.sh */,
+				38B7BB34104F01DF93CD896E9D8D252A /* Pods-VideoDecoder-Example-Info.plist */,
+				1C045DC6656CA1ACA9EAEA18FD2A679C /* Pods-VideoDecoder-Example-umbrella.h */,
+				78AA85EFCF25A1299D2FD71DDE1CE205 /* Pods-VideoDecoder-Example.debug.xcconfig */,
+				E6A453EF4252C50C90EE9364D3FB4780 /* Pods-VideoDecoder-Example.release.xcconfig */,
+			);
+			name = "Pods-VideoDecoder-Example";
+			path = "Target Support Files/Pods-VideoDecoder-Example";
+			sourceTree = "<group>";
+		};
+		B0CB0B86B9C85878E3215729CC3B93E7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8187F10F06F2785C9C7D684183FBB280 /* VideoDecoder */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BB57B52DD809DFD15DF276C116A51CC8 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37FE199E31BF9FEB23B2017415207248 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.modulemap */,
+				DDD20F9730C3DB383D58474F093A2F9E /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-acknowledgements.markdown */,
+				6518FADAADA8FEA7E523C20B411B25DD /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-acknowledgements.plist */,
+				37C5E88B6FF31169C345CA8A6BC93970 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-dummy.m */,
+				92ACAA7C2DCCC8DAD9317CC5C43BD7B4 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-frameworks.sh */,
+				A2E0E65F9322F8C7A0CFB04EEF9FE200 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-Info.plist */,
+				F7C3BB1AB014C1EBD8AD23D8C774C543 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-umbrella.h */,
+				66EA7CE8AAA011A1DBCBCC9690DB6FCE /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig */,
+				800299620D00E98CF5D64A52238B7B1B /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig */,
+			);
+			name = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests";
+			path = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B0CB0B86B9C85878E3215729CC3B93E7 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4FBDFE39317D1DB2A50CE78050E86428 /* Products */,
+				668E197E8C0B19E2181EE9603A6F627F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4146F874F863DFE6447E0EB2BE535ABF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E209223F075D599BAEB6F83AE2E1A9 /* Pods-VideoDecoder-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CD2D70255AD264DD37A99F7D0FE5DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E0F36E769F91F68FED97497508AF7A /* VideoDecoder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F42A5B28EAA671585FEDE7B76FE86AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD83C216020730A36BFE18E02E6EA75 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C52C2E73C3F5E1F61A71489499793DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B0933297CAA614EDC2C4DE514D16C9 /* Pods-VideoDecoder-ExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		270C8DE10A7FEC6AFAEFDC89D5D5D4DA /* Pods-VideoDecoder-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A445BA2E6645F3077DF7C24E924FA1 /* Build configuration list for PBXNativeTarget "Pods-VideoDecoder-ExampleTests" */;
+			buildPhases = (
+				7C52C2E73C3F5E1F61A71489499793DA /* Headers */,
+				96B22E237C01AD85666DBE365CE20CCC /* Sources */,
+				23BAC481DD553D7AC08EA0C60CACE384 /* Frameworks */,
+				B6EFA480C91718E8F176F1AB4ACB1BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F4107C626E2E7514C5E62A72E8E994D /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoDecoder-ExampleTests";
+			productName = "Pods-VideoDecoder-ExampleTests";
+			productReference = C3E5CCCC57E5BF963C2465C55C8B88C4 /* Pods_VideoDecoder_ExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D797287CC1836BF6B80CEA63BFDBFA6 /* Pods-VideoDecoder-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0895392BDD485E54C949D978FB808F1C /* Build configuration list for PBXNativeTarget "Pods-VideoDecoder-Example" */;
+			buildPhases = (
+				4146F874F863DFE6447E0EB2BE535ABF /* Headers */,
+				8EB496A5BF48953CF27FBAEE30765990 /* Sources */,
+				C47C2216C04C20B33BC9AD117BAB4D35 /* Frameworks */,
+				38A0B26C54B57D471BC9A66528540AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D796CB018E5DCB7E068B006DB359473 /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoDecoder-Example";
+			productName = "Pods-VideoDecoder-Example";
+			productReference = D2DCFF18E43D96870BFB133E19CBADD9 /* Pods_VideoDecoder_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB541849EECA7A3540CB615FADECCD2F /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62718F94AB6455F26206E836D0DEC0A2 /* Build configuration list for PBXNativeTarget "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests" */;
+			buildPhases = (
+				6F42A5B28EAA671585FEDE7B76FE86AF /* Headers */,
+				9AA98452E0A33C596EA2B62D8AB651E7 /* Sources */,
+				89D6B18A3755BFFEA4BE350C605A6F0D /* Frameworks */,
+				EAD7B7BC30B5D66DF99219D6171F270F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87035010988DE598CA66225F4A2C1705 /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests";
+			productName = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests";
+			productReference = EBF68320915090CB8FA82B7BB65ED223 /* Pods_VideoDecoder_Example_VideoDecoder_ExampleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC35F34D7E2B94B1D2F4EC6F1716D88C /* VideoDecoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC498FBD08232DD2DF23D53F2321D2 /* Build configuration list for PBXNativeTarget "VideoDecoder" */;
+			buildPhases = (
+				55CD2D70255AD264DD37A99F7D0FE5DA /* Headers */,
+				83AED252AD2EE09C1A1ADCBE01C03E09 /* Sources */,
+				89B7441A67C0841D070693DBF2672245 /* Frameworks */,
+				EF0C0D68E37BF82245F97CA6EF5AC0CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoDecoder;
+			productName = VideoDecoder;
+			productReference = 0CDBA464D2F0912576D96D51F9F53382 /* VideoDecoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4FBDFE39317D1DB2A50CE78050E86428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D797287CC1836BF6B80CEA63BFDBFA6 /* Pods-VideoDecoder-Example */,
+				CB541849EECA7A3540CB615FADECCD2F /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests */,
+				270C8DE10A7FEC6AFAEFDC89D5D5D4DA /* Pods-VideoDecoder-ExampleTests */,
+				DC35F34D7E2B94B1D2F4EC6F1716D88C /* VideoDecoder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38A0B26C54B57D471BC9A66528540AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6EFA480C91718E8F176F1AB4ACB1BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD7B7BC30B5D66DF99219D6171F270F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0C0D68E37BF82245F97CA6EF5AC0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83AED252AD2EE09C1A1ADCBE01C03E09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF0365B86E55839188433D50B56C1B7 /* CMSampleBuffer+Extension.swift in Sources */,
+				170E060308EF5D64CB98281E3D02FFDD /* H264Decoder.swift in Sources */,
+				4153DEF8D32502A505AEFEE68CCFD1B2 /* H264NalUnit.swift in Sources */,
+				09DB5285CD5318CDF006D1865B9DAC77 /* H265Decoder.swift in Sources */,
+				8C37D4C8535E251A86CC8FE21B836CE1 /* H265NalUnit.swift in Sources */,
+				01D99F9627B6DEA530AF3BDA9B14A986 /* NalUnitParser.swift in Sources */,
+				EA5A17BE0EA9FDF37ED466850B40FBB0 /* NalUnitProtocol.swift in Sources */,
+				F4054E13AF11DD14B76E8FDD7930011C /* UnsafePointer+Extension.swift in Sources */,
+				8B1C19D2145D3E2F1AC1A30424DCEE66 /* VideoDecoder-dummy.m in Sources */,
+				B7A6B75D8B84DB68AEFF6C7BAD5A434F /* VideoDecoder.swift in Sources */,
+				FC2D6C991CE589499CD101B924CA7A7B /* VideoPacket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB496A5BF48953CF27FBAEE30765990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4423604B205C6C1632050382C42845 /* Pods-VideoDecoder-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B22E237C01AD85666DBE365CE20CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B15068C70470FEA5422B158D35A8D2 /* Pods-VideoDecoder-ExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA98452E0A33C596EA2B62D8AB651E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26727E1AECAF9ECA742E4B447F264285 /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D796CB018E5DCB7E068B006DB359473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoDecoder;
+			target = DC35F34D7E2B94B1D2F4EC6F1716D88C /* VideoDecoder */;
+			targetProxy = 3AC9BB5FC19CA284E7BB739951492ED4 /* PBXContainerItemProxy */;
+		};
+		7F4107C626E2E7514C5E62A72E8E994D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VideoDecoder-Example";
+			target = 5D797287CC1836BF6B80CEA63BFDBFA6 /* Pods-VideoDecoder-Example */;
+			targetProxy = 1B22A7BDC1BF68FFAA7F3A8D3F928F45 /* PBXContainerItemProxy */;
+		};
+		87035010988DE598CA66225F4A2C1705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoDecoder;
+			target = DC35F34D7E2B94B1D2F4EC6F1716D88C /* VideoDecoder */;
+			targetProxy = 9560962C869959B10315FB1D7E311891 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		036EDE6301FF86E09112A0153FA5DC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 547D1BC86D2F94462F28D908383EB1D3 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoDecoder-ExampleTests/Pods-VideoDecoder-ExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoDecoder-ExampleTests/Pods-VideoDecoder-ExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12E97BEF718B37E2FBDD4D7E81460C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3852D4218902F2997D840250156F67F6 /* VideoDecoder.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoDecoder/VideoDecoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoDecoder/VideoDecoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VideoDecoder/VideoDecoder.modulemap";
+				PRODUCT_MODULE_NAME = VideoDecoder;
+				PRODUCT_NAME = VideoDecoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		190862B01FE3A87A7B2E9B0A43D105AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800299620D00E98CF5D64A52238B7B1B /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		237E4B018129293EBB84E47CC5ACE1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78AA85EFCF25A1299D2FD71DDE1CE205 /* Pods-VideoDecoder-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoDecoder-Example/Pods-VideoDecoder-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoDecoder-Example/Pods-VideoDecoder-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56C456A89B04E10186DF9E642FB2C437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A453EF4252C50C90EE9364D3FB4780 /* Pods-VideoDecoder-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoDecoder-Example/Pods-VideoDecoder-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoDecoder-Example/Pods-VideoDecoder-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9D9E35632E3D73FE1882DE5289A545B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AB2D03F802E4AB7FF33A52F03492D4 /* VideoDecoder.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoDecoder/VideoDecoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoDecoder/VideoDecoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VideoDecoder/VideoDecoder.modulemap";
+				PRODUCT_MODULE_NAME = VideoDecoder;
+				PRODUCT_NAME = VideoDecoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C1260594C22992BEC3D51C58C4E23B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54109B52E5A22AFE4ABD92001B37C5C9 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoDecoder-ExampleTests/Pods-VideoDecoder-ExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoDecoder-ExampleTests/Pods-VideoDecoder-ExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1A15975C53EF5F753D64CAEFD7345EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66EA7CE8AAA011A1DBCBCC9690DB6FCE /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0895392BDD485E54C949D978FB808F1C /* Build configuration list for PBXNativeTarget "Pods-VideoDecoder-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E4B018129293EBB84E47CC5ACE1A7 /* Debug */,
+				56C456A89B04E10186DF9E642FB2C437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A445BA2E6645F3077DF7C24E924FA1 /* Build configuration list for PBXNativeTarget "Pods-VideoDecoder-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036EDE6301FF86E09112A0153FA5DC67 /* Debug */,
+				C1260594C22992BEC3D51C58C4E23B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC498FBD08232DD2DF23D53F2321D2 /* Build configuration list for PBXNativeTarget "VideoDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E97BEF718B37E2FBDD4D7E81460C76 /* Debug */,
+				9D9E35632E3D73FE1882DE5289A545B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62718F94AB6455F26206E836D0DEC0A2 /* Build configuration list for PBXNativeTarget "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A15975C53EF5F753D64CAEFD7345EF /* Debug */,
+				190862B01FE3A87A7B2E9B0A43D105AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

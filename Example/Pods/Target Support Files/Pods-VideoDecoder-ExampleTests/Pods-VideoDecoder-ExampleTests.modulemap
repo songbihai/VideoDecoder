@@ -1,0 +1,6 @@
+framework module Pods_VideoDecoder_ExampleTests {
+  umbrella header "Pods-VideoDecoder-ExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

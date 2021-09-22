@@ -40,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13439560133CDDC9F00D18ED /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3477C0AE9A2774685C894754 /* Pods_VideoDecoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecoder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5350BE6C5D2DF4FE47922294 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecoder-ExampleTests.release.xcconfig"; path = "Target Support Files/Pods-VideoDecoder-ExampleTests/Pods-VideoDecoder-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6692D07A1547DA2B69E25BA6 /* Pods_VideoDecoder_Example_VideoDecoder_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecoder_Example_VideoDecoder_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C80E4358E886D45A6F8D65 /* Pods_VideoDecoder_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecoder_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EF35EFB2666CA11CF48B71 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecoder-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecoder-ExampleTests/Pods-VideoDecoder-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA3F14667BF8422E38B3F2E /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests/Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC5B839626FAF97C00403DB8 /* VideoDecoder-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VideoDecoder-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5B839926FAF97C00403DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5B839D26FAF97C00403DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		EC5B83CB26FAFE5D00403DB8 /* VideoFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFileReader.swift; sourceTree = "<group>"; };
 		EC8AEAEA26FAFEE60048A8AF /* h264Data */ = {isa = PBXFileReference; lastKnownFileType = file; path = h264Data; sourceTree = "<group>"; };
 		EC8AEAEB26FAFEE60048A8AF /* h265Data */ = {isa = PBXFileReference; lastKnownFileType = file; path = h265Data; sourceTree = "<group>"; };
+		EDC7C7FCA8A611BF0EF909F1 /* Pods-VideoDecoder-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecoder-Example.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecoder-Example/Pods-VideoDecoder-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F4E48575946EF0C991D49E /* Pods-VideoDecoder-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecoder-Example.release.xcconfig"; path = "Target Support Files/Pods-VideoDecoder-Example/Pods-VideoDecoder-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C7CB0A97B8405DEA8CA1B395 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDC7C7FCA8A611BF0EF909F1 /* Pods-VideoDecoder-Example.debug.xcconfig */,
+				F3F4E48575946EF0C991D49E /* Pods-VideoDecoder-Example.release.xcconfig */,
+				EAA3F14667BF8422E38B3F2E /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig */,
+				13439560133CDDC9F00D18ED /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig */,
+				A0EF35EFB2666CA11CF48B71 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */,
+				5350BE6C5D2DF4FE47922294 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC5B838D26FAF97C00403DB8 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,7 @@
 				EC5B83BA26FAF97E00403DB8 /* VideoDecoder-ExampleUITests */,
 				EC5B839726FAF97C00403DB8 /* Products */,
 				744CC5D08A3541C2642FC802 /* Frameworks */,
+				C7CB0A97B8405DEA8CA1B395 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -561,6 +582,7 @@
 		};
 		EC5B83C126FAF97E00403DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC7C7FCA8A611BF0EF909F1 /* Pods-VideoDecoder-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -581,6 +603,7 @@
 		};
 		EC5B83C226FAF97E00403DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F4E48575946EF0C991D49E /* Pods-VideoDecoder-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -601,6 +624,7 @@
 		};
 		EC5B83C426FAF97E00403DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0EF35EFB2666CA11CF48B71 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -623,6 +647,7 @@
 		};
 		EC5B83C526FAF97E00403DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5350BE6C5D2DF4FE47922294 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -645,6 +670,7 @@
 		};
 		EC5B83C726FAF97E00403DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA3F14667BF8422E38B3F2E /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -665,6 +691,7 @@
 		};
 		EC5B83C826FAF97E00403DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13439560133CDDC9F00D18ED /* Pods-VideoDecoder-Example-VideoDecoder-ExampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
