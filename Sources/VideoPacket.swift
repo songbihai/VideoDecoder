@@ -36,11 +36,12 @@ open class VideoPacket {
         uint8Pointer.initialize(from: data, count:data.count)
         let buffer = UnsafePointer(uint8Pointer)
         self.init(buffer, bufferSize: data.count, fps: fps, isIFrame: isIFrame, type: type, videoSize: videoSize)
+        buffer.deallocate()
     }
     
     public init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize) {
         
-        self.buffer = buffer
+        self.buffer = buffer.copy(capacity: bufferSize)
         self.bufferSize = bufferSize
         self.fps = fps;
         self.isIFrame = isIFrame
