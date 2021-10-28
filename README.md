@@ -50,18 +50,18 @@ pod 'VideoDecoder'
 github "songbihai/VideoDecoder"
 ```
 
-### Reward
+<!-- ### Reward
 
-If VideoDecoder helps you in the development, if you need technical support or you need custom features, you can reward me.
+If VideoDecoder helps you in the development, if you need technical support or you need custom features, you can reward me. -->
 
-BTC: 
+<!-- BTC: 
 3BGTcyasYoZDV7MjHqMiQuew4R925vC6kL
 
 ETH:
-0x83f931a297C3A05Fd0eF3891670f85316EB12A4C
+0x83f931a297C3A05Fd0eF3891670f85316EB12A4C -->
 
 
-![Ali pay](https://i.loli.net/2021/09/15/z5LuainUDeIRTpZ.jpg)  ![WeChat pay](https://i.loli.net/2021/09/15/e8GXMf1CIxR9KVo.jpg)
+<!-- ![Ali pay](https://i.loli.net/2021/09/15/z5LuainUDeIRTpZ.jpg)  ![WeChat pay](https://i.loli.net/2021/09/15/e8GXMf1CIxR9KVo.jpg) -->
 
 ## License
 
