@@ -30,9 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         videoFileReader = .init(.h264)
-        H264Decoder.defaultMinimumGroupOfPictures = 1
-        H265Decoder.defaultMinimumGroupOfPictures = 1
-        decoder = H264Decoder.init(delegate: self)
+        decoder = H264Decoder(delegate: self)
         setupTimer()
     }
     

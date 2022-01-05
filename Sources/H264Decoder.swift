@@ -1,24 +1,15 @@
-//
-//  H264Decoder.swift
-//  DecoderKit
-//
-//  Created by songbihai on 2021/9/7.
-//
-
 import UIKit
 import AVFoundation
 import VideoToolbox
 
 open class H264Decoder: VideoDecoder {
-    
-    public static var defaultMinimumGroupOfPictures: Int = 12
-    
-    public static let defaultDecodeFlags: VTDecodeFrameFlags = [
+        
+    public static var defaultDecodeFlags: VTDecodeFrameFlags = [
         ._EnableAsynchronousDecompression,
         ._EnableTemporalProcessing
     ]
     
-    public static let defaultAttributes: [NSString: AnyObject] = [
+    public static var defaultAttributes: [NSString: AnyObject] = [
         kCVPixelBufferPixelFormatTypeKey: NSNumber(value: kCVPixelFormatType_32BGRA),
         kCVPixelBufferIOSurfacePropertiesKey: [:] as AnyObject,
         kCVPixelBufferOpenGLESCompatibilityKey: NSNumber(booleanLiteral: true)
@@ -32,7 +23,6 @@ open class H264Decoder: VideoDecoder {
     private var videoSize: CGSize = .zero
     private var invalidateSession: Bool = false
     private var buffers: [CMSampleBuffer] = []
-    private var minimumGroupOfPictures: Int = H264Decoder.defaultMinimumGroupOfPictures
     private var formatDesc: CMVideoFormatDescription?
     private var callback: VTDecompressionOutputCallback = {(decompressionOutputRefCon: UnsafeMutableRawPointer?, _: UnsafeMutableRawPointer?, status: OSStatus, infoFlags: VTDecodeInfoFlags, imageBuffer: CVBuffer?, presentationTimeStamp: CMTime, duration: CMTime) in
         let decoder: H264Decoder = Unmanaged<H264Decoder>.fromOpaque(decompressionOutputRefCon!).takeUnretainedValue()
@@ -64,9 +54,6 @@ open class H264Decoder: VideoDecoder {
         if isReset || invalidateSession {
             deinitDecoder()
         }
-        if let _ = session {
-            return
-        }
         guard let spsUnit = spsUnit, let ppsUnit = ppsUnit else {
             delegate.decodeOutput(error: .notFoundVpsOrSpsOrPps)
             return
@@ -81,6 +68,14 @@ open class H264Decoder: VideoDecoder {
         guard let format = formatDesc else {
             return
         }
+        if let session = session {
+            let needResetSession = !VTDecompressionSessionCanAcceptFormatDescription(session, formatDescription: format)
+            if needResetSession {
+                deinitDecoder()
+            }else {
+                return
+            }
+        }
         var record = VTDecompressionOutputCallbackRecord(
             decompressionOutputCallback: callback,
             decompressionOutputRefCon: Unmanaged.passUnretained(self).toOpaque()
@@ -94,6 +89,8 @@ open class H264Decoder: VideoDecoder {
             decompressionSessionOut: &session)
         if status != noErr {
             delegate.decodeOutput(error: .decompressionSessionCreate(status))
+        }else {
+            invalidateSession = false
         }
     }
     
@@ -107,22 +104,17 @@ open class H264Decoder: VideoDecoder {
     open func decodeOnePacket(_ packet: VideoPacket) {
         if fps != packet.fps || videoSize != packet.videoSize {
             invalidateSession = true
+            fps = packet.fps
+            videoSize = packet.videoSize
         }
-        
         let nalUnits = NalUnitParser.unitParser(packet: packet)
         var currntUnit: H264NalUnit?
         nalUnits.forEach { nalUnit in
             if let unit = nalUnit as? H264NalUnit {
                 switch unit.type {
                 case .sps:
-                    if let _ = spsUnit {
-                        break
-                    }
                     spsUnit = unit
                 case .pps:
-                    if let _ = ppsUnit {
-                        break
-                    }
                     ppsUnit = unit
                 case .idr:
                     initDecoder(vpsUnit: nil, spsUnit: spsUnit, ppsUnit: ppsUnit, isReset: false)
@@ -223,7 +215,7 @@ open class H264Decoder: VideoDecoder {
         buffers.sort {
             $0.presentationTimeStamp < $1.presentationTimeStamp
         }
-        if buffers.count >= minimumGroupOfPictures {
+        if buffers.count > 0 {
             delegate.decodeOutput(video: buffers.removeFirst())
         }
       

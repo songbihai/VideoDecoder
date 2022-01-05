@@ -1,10 +1,3 @@
-//
-//  VideoDecoder.swift
-//  DecoderKit
-//
-//  Created by songbihai on 2021/9/7.
-//
-
 import Foundation
 import AVFoundation
 import VideoToolbox

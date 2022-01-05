@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VideoDecoder'
-  s.version          = '1.0.8'
-  s.summary          = 'A short description of VideoDecoder.'
+  s.version          = '1.0.9'
+  s.summary          = 'iOS platform video hard decoding, support h264 & h265.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

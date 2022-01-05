@@ -115,7 +115,6 @@
 				A0EF35EFB2666CA11CF48B71 /* Pods-VideoDecoder-ExampleTests.debug.xcconfig */,
 				5350BE6C5D2DF4FE47922294 /* Pods-VideoDecoder-ExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
