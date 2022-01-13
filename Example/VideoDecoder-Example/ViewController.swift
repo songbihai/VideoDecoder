@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  VideoDecoder
-//
-//  Created by songbihai on 09/11/2021.
-//  Copyright (c) 2021 songbihai. All rights reserved.
-//
-
 import UIKit
 import VideoToolbox
 import VideoDecoder

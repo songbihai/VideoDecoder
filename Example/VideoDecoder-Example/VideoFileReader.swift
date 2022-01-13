@@ -1,12 +1,3 @@
-//
-//  VideoFileReader.swift
-//  VideoDecoder_Example
-//
-//  Analog push video stream
-//  模拟推视频流
-//  Copyright © 2021 CocoaPods. All rights reserved.
-//
-
 import Foundation
 import VideoDecoder
 

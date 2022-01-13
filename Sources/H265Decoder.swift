@@ -15,6 +15,9 @@ open class H265Decoder: VideoDecoder {
         kCVPixelBufferOpenGLESCompatibilityKey: NSNumber(booleanLiteral: true)
     ]
     
+    public static var defaultMinimumGroupOfPictures: Int = 12
+    
+    open var isBaseline: Bool = true
     open var delegate: VideoDecoderDelegate
     
     private var vpsUnit: H265NalUnit?
@@ -22,6 +25,12 @@ open class H265Decoder: VideoDecoder {
     private var ppsUnit: H265NalUnit?
     private var fps: Int = 0
     private var videoSize: CGSize = .zero
+    private var flagIn: VTDecodeFrameFlags {
+        H265Decoder.defaultDecodeFlags
+    }
+    private var minimumGroupOfPictures: Int {
+        H264Decoder.defaultMinimumGroupOfPictures
+    }
     private var invalidateSession: Bool = false
     private var buffers: [CMSampleBuffer] = []
     private var formatDesc: CMVideoFormatDescription?
@@ -158,8 +167,7 @@ open class H265Decoder: VideoDecoder {
             
             if let sampleBuff = sampleBuffer, let session = session {
                 
-                let flagIn: VTDecodeFrameFlags = .init(rawValue: 0)
-                var flagOut: VTDecodeInfoFlags = .init(rawValue: 0)
+                var flagOut: VTDecodeInfoFlags = []
                 status = VTDecompressionSessionDecodeFrame(session, sampleBuffer: sampleBuff, flags: flagIn, frameRefcon: nil, infoFlagsOut: &flagOut)
                 if status != noErr {
                     delegate.decodeOutput(error: .decompressionSessionDecodeFrame(status))
@@ -215,12 +223,16 @@ open class H265Decoder: VideoDecoder {
             return
         }
         
-        buffers.append(buffer)
-        buffers.sort {
-            $0.presentationTimeStamp < $1.presentationTimeStamp
-        }
-        if buffers.count > 0 {
-            delegate.decodeOutput(video: buffers.removeFirst())
+        if isBaseline {
+            delegate.decodeOutput(video: buffer)
+        }else {
+            buffers.append(buffer)
+            buffers.sort {
+                $0.presentationTimeStamp < $1.presentationTimeStamp
+            }
+            if buffers.count >= minimumGroupOfPictures {
+                delegate.decodeOutput(video: buffers.removeFirst())
+            }
         }
         
     }

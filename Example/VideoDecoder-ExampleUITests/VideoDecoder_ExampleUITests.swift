@@ -1,10 +1,3 @@
-//
-//  VideoDecoder_ExampleUITests.swift
-//  VideoDecoder-ExampleUITests
-//
-//  Created by 宋碧海 on 2021/9/22.
-//
-
 import XCTest
 
 class VideoDecoder_ExampleUITests: XCTestCase {

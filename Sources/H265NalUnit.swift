@@ -14,9 +14,9 @@ open class H265NalUnit: NalUnitProtocol {
         outHeadBuffer = self.buffer + 4
         var length = CFSwapInt32HostToBig(UInt32(bufferSize - 4))
         let rawPointer = UnsafeMutableRawPointer.allocate(byteCount: bufferSize, alignment: MemoryLayout<UInt8>.alignment)
-        rawPointer.initializeMemory(as: UInt8.self, from: buffer, count: bufferSize)
-        let rawBufferPointer = UnsafeRawBufferPointer(start: rawPointer, count: bufferSize)
+        rawPointer.initializeMemory(as: UInt8.self, from: self.buffer, count: bufferSize)
         memcpy(rawPointer, &length, 4)
+        let rawBufferPointer = UnsafeRawBufferPointer(start: rawPointer, count: bufferSize)
         if let baseAddress = rawBufferPointer.baseAddress {
             let outRawPointer = UnsafeRawPointer(baseAddress)
             lengthHeadBuffer = outRawPointer.bindMemory(to: UInt8.self, capacity: bufferSize)

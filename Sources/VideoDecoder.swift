@@ -65,6 +65,8 @@ public protocol VideoDecoderDelegate: AnyObject {
 
 public protocol VideoDecoder: AnyObject {
     
+    var isBaseline: Bool { get set }
+    
     var delegate: VideoDecoderDelegate { get set}
     
     func initDecoder(vpsUnit: NalUnitProtocol?, spsUnit: NalUnitProtocol?, ppsUnit: NalUnitProtocol?, isReset: Bool)
