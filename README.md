@@ -15,6 +15,12 @@ let decoder = H264Decoder(delegate: self)
 //Initialize the videoPacket instance of h264 encode data
 decoder.decodeOnePacket(videoPacket)
 
+//Initialize the videoPacket instance functions
+init(_ data: NSData, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ data: Data, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ data: [UInt8], fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+
 ```
 
 h265:
@@ -25,6 +31,12 @@ let decoder = H265Decoder(delegate: self)
 
 //Initialize the videoPacket instance of h265 encode data
 decoder.decodeOnePacket(videoPacket)
+
+//Initialize the videoPacket instance functions
+init(_ data: NSData, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ data: Data, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ data: [UInt8], fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
 
 ```
 
