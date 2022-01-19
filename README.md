@@ -39,6 +39,15 @@ init(_ data: [UInt8], fps: Int, isIFrame: Bool = false, type: EncodeType, videoS
 init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
 
 ```
+VideoPacket:
+```swift
+//Initialize the videoPacket instance functions
+init(_ data: NSData, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ data: Data, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ data: [UInt8], fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+init(_ buffer: UnsafePointer<UInt8>, bufferSize: Int, fps: Int, isIFrame: Bool = false, type: EncodeType, videoSize: CGSize)
+
+```
 
 
 ### Build Requirements
