@@ -2,6 +2,8 @@
 
 iOS platform video hard decoding, support h264, h265
 
+Using VideoDecoder requires you to handle threads yourself
+
 ### Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
