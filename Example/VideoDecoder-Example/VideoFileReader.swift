@@ -44,9 +44,12 @@ class VideoFileReader {
                 }
                 startIndex += 1
             }
-            if readStremData() == 0 {
-                return nil
+            if startIndex > 4 {
+                let data = [UInt8](streamBuffer[0...startIndex])
+                streamBuffer.removeSubrange(0...startIndex)
+                return VideoPacket.init(data, fps: fps, type: type, videoSize: CGSize(width: 1920, height: 1080))
             }
+            return nil
         }
         
     }
