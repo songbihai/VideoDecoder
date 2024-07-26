@@ -79,7 +79,7 @@ ETH:
 VideoDecoder is available under the MIT license. See the LICENSE file for more info.
 
 
-# Star History
+## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=songbihai/VideoDecoder&type=Date)](https://star-history.com/#songbihai/VideoDecoder&Date)
 
