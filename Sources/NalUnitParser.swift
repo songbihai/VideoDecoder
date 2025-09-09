@@ -3,13 +3,12 @@ import CoreMedia
 
 open class NalUnitParser {
 
-    private class var startCode: UnsafeMutablePointer<UInt8> {
-        let start: [UInt8] = [0,0,0,1]
-        let startBuffer = start.withUnsafeBytes { return $0 }
-        let rawPointer = UnsafeMutableRawPointer(mutating: startBuffer.baseAddress!)
-        return rawPointer.bindMemory(to: UInt8.self, capacity: 4)
+    private static let startCodeBuffer: [UInt8] = [0, 0, 0, 1]
+
+    private class var startCode: UnsafePointer<UInt8> {
+        return startCodeBuffer.withUnsafeBufferPointer  { $0.baseAddress! }
     }
-    
+
     open class func unitParser(packet: VideoPacket) -> [NalUnitProtocol] {
         var nalUnits: [NalUnitProtocol] = []
         let length = packet.bufferSize;
